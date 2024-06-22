@@ -83,6 +83,9 @@ ol {
 .content__list {  
   height: 298px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .content__video-card {
@@ -90,7 +93,17 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 100%;
+  width: 194px;
+}
+
+.content__video-card-description-container {
+  width: 200px;
+}
+
+.content__video-card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .search-form {
@@ -164,3 +177,8 @@ ol {
 .search-form__label:hover .search-form__label-text {  
   text-decoration: underline;
 }
+
+.more-button {
+  width: 100%;
+}
+
