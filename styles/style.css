@@ -8,6 +8,8 @@ html {
   block-size: 100%;
 }
 
+/* GENERAL */
+
 .page {
   display: flex;
   flex-direction: column;
@@ -79,6 +81,8 @@ ol {
   outline-offset: 1px;
 }
 
+/* CONTENT */
+
 .content {
   display: flex;
   align-items: end;
@@ -87,12 +91,16 @@ ol {
   width: 1140px;
 }
 
+/* RESULT */
+
 .result {
   display: flex;
   flex-direction: column;
   gap: 16px;
   min-width: 711px;
 }
+
+/* VIDEO */
 
 .result__video-container {
   position: relative;
@@ -106,6 +114,8 @@ ol {
   object-fit: cover;
   object-position: center;
 }
+
+/* SEARCH-FORM */
 
 .search-form {
   display: flex;
@@ -188,6 +198,8 @@ ol {
   border: 1px solid #fff;
 }
 
+/* CHECKBOX */
+
 .search-form__checkbox-list {
   display: flex;
   align-items: center;
@@ -203,12 +215,16 @@ ol {
   border: 1px solid #fff;
 }
 
+/* SUBMIT-BUTTON */
+
 .search-form__submit-button {
   width: 194px;
   height: 34px;
   align-self: flex-end;
   padding: 6px 74px;
 }
+
+/* DETAILS */
 
 .content__details {
   display: flex;
@@ -229,6 +245,8 @@ ol {
   color: #545050;
 }
 
+/* SEARCH-RESULTS */
+
 .content__list {
   position: relative;
   height: 298px;
@@ -237,6 +255,8 @@ ol {
   flex-direction: column;
   row-gap: 30px;
 }
+
+/* CARDS */
 
 .content__list-item {
   cursor: pointer;
@@ -269,6 +289,8 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
+
+/* VIDEO */
 
 .content__video-card {
   display: flex;
@@ -308,6 +330,8 @@ ol {
   object-fit: cover;
   object-position: center;
 }
+
+/* MORE-BUTTON */
 
 .more-button {
   padding-top: 6px;
