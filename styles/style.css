@@ -56,7 +56,7 @@ ol {
 .button {
   user-select: none;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -142,10 +142,6 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:focus {
-  outline: none;
-}
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -164,11 +160,6 @@ ol {
 
 .search-form__label-text {
   user-select: none;
-}
-
-.search-form__label:focus-within {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -253,7 +244,6 @@ ol {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
 }
 
 /* CARDS */
@@ -261,6 +251,10 @@ ol {
 .content__list-item {
   cursor: pointer;
 }
+
+.content__list-item:not(:last-of-type) {
+  margin-bottom: 30px;
+} 
 
 .content__card-link {
   display: block;
@@ -317,7 +311,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -326,7 +320,7 @@ ol {
 .content__video-card-thumbnail {
   display: block;
   width: 194px;
-  max-height: 103px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
 }
